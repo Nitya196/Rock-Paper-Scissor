@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock · Paper · Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container" role="main">
+    <h1><span>✧ RPS ✧</span></h1>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <div class="score-item">👤 You <span id="player-score">0</span></div>
+      <div class="score-item">🤖 Computer <span id="computer-score">0</span></div>
+    </div>
+
+    <!-- Choice buttons -->
+    <div class="choice-area">
+      <button class="choice-btn" data-move="rock">
+        <span class="emoji">🪨</span> Rock
+      </button>
+      <button class="choice-btn" data-move="paper">
+        <span class="emoji">📄</span> Paper
+      </button>
+      <button class="choice-btn" data-move="scissors">
+        <span class="emoji">✂️</span> Scissors
+      </button>
+    </div>
+
+    <!-- VS display -->
+    <div class="vs-display">
+      <div class="pick-box">
+        <span class="pick-label">You</span>
+        <span class="pick-value" id="player-pick">—</span>
+      </div>
+      <div class="vs-icon">⚔️</div>
+      <div class="pick-box">
+        <span class="pick-label">Computer</span>
+        <span class="pick-value" id="computer-pick">—</span>
+      </div>
+    </div>
+
+    <!-- Result -->
+    <div class="result-message" id="result-message">✨ Choose your move</div>
+
+    <!-- Reset -->
+    <div class="reset-area">
+      <button class="reset-btn" id="reset-btn">⟳ Reset game</button>
+    </div>
+    <div class="footer-note">first to 5? just reset anytime</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
